@@ -22,3 +22,9 @@ pack: TARGET=./targets/pack/go
 pack: build
 	@echo ">>> Packing the app"; \
 	if [ -x "${TARGET}" ]; then "${TARGET}"; fi
+
+run: TARGET=./targets/run/go
+run: build
+	@echo ">>> Starting the application"; \
+	if [ -x "${TARGET}" ]; then DAEMONIZE="${DAEMONIZE}" "${TARGET}"; fi
+
