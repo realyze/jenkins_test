@@ -15,6 +15,8 @@ RUN yum install -y sudo
 RUN yum install -y git
 RUN yum install -y fontconfig
 
+RUN easy_install supervisor
+
 # Expose 3000
 EXPOSE 3000
 
