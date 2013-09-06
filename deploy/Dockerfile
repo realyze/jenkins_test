@@ -15,6 +15,8 @@ RUN yum install -y sudo
 RUN yum install -y git
 RUN yum install -y fontconfig
 
+# Install Supervisord
+RUN yum install -y python-setuptools
 RUN easy_install supervisor
 
 # Expose 3000
