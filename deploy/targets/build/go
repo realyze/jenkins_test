@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# This file can be an arbitrary executable that takes care of building your app.
+
+set -e
+set -x
+
