@@ -17,3 +17,8 @@ test: DAEMONIZE=1
 test: build
 	@echo ">>> Running tests"; \
 	if [ -x "${TARGET}" ]; then "${TARGET}"; fi
+
+pack: TARGET=./targets/pack/go
+pack: build
+	@echo ">>> Packing the app"; \
+	if [ -x "${TARGET}" ]; then "${TARGET}"; fi
