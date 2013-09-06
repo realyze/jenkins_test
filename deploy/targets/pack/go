@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# This file can be an arbitrary executable that takes care of installing all the
+# dependencies your application may need. It should take care of installing
+# things that do not fit into Dockerfile for some reason.
+
+set -e
+set -x
+
+cd ..
+rm -rf ./node_modules
+tar zcvf jenkins_test.tgz *
