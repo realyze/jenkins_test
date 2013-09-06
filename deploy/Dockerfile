@@ -8,10 +8,7 @@ MAINTAINER Tomas Brambora "tomas@salsitasoft.com"
 # Install Node.js
 RUN yum install -y nodejs npm
 
-RUN npm install -g grunt-cli
-RUN npm install -g karma
-Run npm install -g bower
-Run npm install -g phantomjs
+RUN npm install -g mocha
 
 RUN yum install -y make
 RUN yum install -y sudo
